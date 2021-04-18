@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dene&Yap</title>
+  <!-- custom font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+  <!-- -------------------- -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+  <!-- ---------------------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!-- first we link to the css file ... -->
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="home">
+
+
+  <header class="hero">
+
+    <div class="navbar" id="navbar">
+      <h1 class = "logo"><span class="text-primary"><i class="fas fa-car-battery"></i> Dene</span>Yap</h1>
+      <!-- then we have our nav items -->
+      <nav>
+        <ul>
+          <!-- in order to move inside a  page we pass thew id of the place where we want to go -->
+          <li><a href="#home">Hakkimizda</a></li>
+          <li><a href="#about">Kayit</a></li>
+          <li><a href="#cases">Arduino</a></li>
+         
+        </ul>
+      </nav>
+
+    </div>
+
+    <div id="main-content">
+
+      <div class="main-header">
+        <!-- Expalanation text -->
+        <h1 class="explanation">This is Example text for explanation</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In possimus impedit autem odio unde consequatur quisquam ipsam, excepturi alias, minima eaque rem quidem fuga? Ratione, odit? Modi neque nisi ipsa.</p>
+      </div>
+
+
+      <div class="form">
+        <form action="none">
+          <!-- form info -->
+          <p>Giris yapmak icin email ve parola giriniz.</p>
+          <!--email-->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <!--text area-->
+          <div class="form-group">
+            <label for="password">Parola</label>
+            <input name="message" id="message"> </input>
+          </div>
+          <button class="btn" type="submit" ><a href="/projects.html">Giris</a></button>
+          <a href="#" class="text-small">Sifremi unuttum</a>
+          </form>
+      </div>
+
+      
+
+    </div>
+
+    <!-- under the navbar we have content -->
+
+
+  </header>
+</body>
+</html>
+

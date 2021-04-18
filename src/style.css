@@ -1,0 +1,493 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+
+/*------------------------------ global styling---------------------------- */
+*{
+  box-sizing: border-box;
+  margin : 0;
+  padding: 0;
+}
+
+body{
+  font-family:"Open Sans", sans-serif ;
+  background: white;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+ul{
+  list-style: none;
+
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p{
+  /* we took the margin before now  we add it back */
+/* 10 px from top and bottom , 0px fromn sides */
+  margin: 10px 0px;  
+}
+
+
+img{
+  /* 100 percent of its container */
+  width: 100%; 
+}
+
+/* -----------------------END OF GLOBAL STYLING----------------------------- */
+
+
+
+
+
+
+
+
+/* -------------------navbar sytling--------------------- */
+/* first we put them inside a flexbox then we alling them */
+
+.navbar{
+  /* flex property is default horizontal , if we set allign items
+  it will allign them vertically */
+  /* justify content alligns them horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0e9aa7;
+  color: white;
+  
+  /* common values for navbar */
+  width: 100%;
+  height: 7vh;
+
+/* positon is fixed and top is 0 // it will be sticked to the browser window */
+
+ position: fixed;
+  /* always sticked to top */
+  top: 0px;
+  /* padding from sides /// this is common value as well */
+  padding: 0 30px;
+
+}
+
+.navbar a{
+  
+  color: white;
+  padding: 10px 20px;
+  margin: 0px 5px;
+  font-weight: bold;
+}
+
+/* we add hover effect to links  */
+.navbar a:hover{
+  border-bottom: #f6cd61 2px solid;
+}
+
+.navbar ul{
+  /* we display list items flex as well */
+  display: flex;
+}
+
+.navbar .logo{
+  font-weight: bold;
+}
+
+.hero{
+  background: #3da4ab ;
+  /* it will cover whole viewport */
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+
+/* styling main content */
+
+#main-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* styling main  section */
+
+#main-content .main-header{
+
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding */
+  padding: 0px 50px;
+  /* text align */
+  text-align: center;
+
+}
+
+#main-content .main-header h1{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+
+#main-content .main-header p{
+  /* margin */
+  margin-top: 30px;
+  /* padding */
+  padding: 0px 20px;
+}
+
+
+
+/* sytling form  div */
+
+#main-content .form{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-content .form form{
+  border: 4px solid #0e9aa7;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width and height */
+  width: 50%;
+  height: 50%;
+  /* background */
+  background: #0e9aa7;
+  
+}
+
+#main-content .form label{
+  display: block;
+  margin-bottom: 5px;
+
+}
+
+
+#main-content .form input{
+
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px #f6cd61 solid;
+  border-radius: 8px;
+
+}
+
+#main-content .form .btn{
+  /* margin top */
+  margin-top: 30px;
+  width: 50%;
+  /* background */
+  background:#fe8a71 ;
+  /* text */
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#main-content .form p{
+  text-align: center;
+  padding: 0px 20px;
+  /* margin top */
+  
+  
+}
+
+#main-content .form .text-small{
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
+#main-content .form input:focus{
+  outline: none;
+  border-color: #0e9aa7;
+
+
+}
+
+#main-content .form a{
+  color: white;
+}
+
+
+
+
+
+
+
+/* ***********************sytling projects page ***************************/
+
+/* body of projects page */
+#projects{
+  background:white;
+}
+
+#projects .navbar{
+  position: static;
+}
+
+#all-projects{
+  display: flex;
+  flex-direction: column;
+  /* padding */
+  padding: 0px 50px;
+
+}
+
+/* section header */
+
+#all-projects .section-header{
+  width: 100%;
+  /* margin-top */
+  margin-top: 50px;
+  /* border-bottom */
+
+  border-bottom: 2px solid #4a4e4d;
+
+}
+
+
+#all-projects .section-header h1{
+  font-weight: bold;
+  font-size: 25px;
+  color: #4a4e4d;
+  margin-bottom: 15px;
+}
+
+#all-projects .project-list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* styling project-items */
+
+#all-projects .box{
+  height: 150px;
+  width: 150px;
+  background: white;
+  /* margin */
+  margin: 10px;
+
+  padding: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+
+}
+
+/* hover efect */
+#all-projects .box:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+/* flex item */
+#all-projects .box .project-item{
+
+  width: 100%;
+  height: 100%;
+  /* border */
+  border: 2px dashed #4a4e4d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  
+}
+
+/* color of the icon */
+#all-projects .box .project-item i{
+  color: #4a4e4d;
+}
+
+#all-projects .box .project-item p{
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/* ************ SANDBOX PAGE ****************** */
+
+/* body */
+#sandbox{
+
+   max-height: 100vh;
+   color: white;
+   position: relative;
+   overflow: hidden;
+
+}
+
+#sandbox .navbar{
+  position:static;  
+}
+
+
+#sandbox .container{
+  
+  width: 100%;
+  max-height: 93vh;
+  height: 100%;
+  /* overflow: hidden; */
+  display: grid;
+  grid-template-columns: 7fr 4fr;
+  /* position just below the navbar */
+  position: absolute;
+  top: 50px;
+  left: 0;
+
+}
+
+/* styling componenets and coponent-card */
+#sandbox .components{
+  height: 100%;
+  /* background-color: #fe8a71; */
+  padding: 20px;
+  
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  /* overflow */
+  overflow-y: scroll;
+  
+
+   
+}
+
+
+
+/* each row item in grid system */
+#sandbox .row-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+}
+
+.components .component-card{
+
+  height: 180px;
+  width: 180px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin:40px
+
+}
+.components .component-card p{
+  font-size: 14px;
+}
+
+/* styling each component */
+.components .component-card .component{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sandbox .digital{
+  color: #DC143C;
+  /* font-weight: bold; */
+  font-family: Roboto Mono,sans-serif;
+}
+
+#sandbox .analog{
+  color:	#31698a;
+  /* font-weight: bold; */
+  font-family: Roboto Mono,sans-serif;
+}
+
+
+
+/* FIXME: fix the borders */
+#sandbox .text-editor{
+
+  
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-left: 4px solid #31698a;
+  border-right: 4px solid #31698a;
+  border-bottom: 8px solid #31698a;
+  position:relative;
+}
+
+#sandbox .text-editor-control{
+  padding: 20px;
+  background-color: #31698a;
+ 
+}
+
+
+#sandbox .text-editor .editor-area{
+ 
+  width: 100%;
+  height: 100%;
+  position: relative;
+    
+}
+
+#editor{
+
+  font-size: 16px;
+  z-index: 30;
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+    
+}
+
+
+
+
+
+
+
+
+

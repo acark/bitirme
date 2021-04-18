@@ -1,0 +1,95 @@
+/* we use this file for common classes */
+
+/* ----------Text color classes------- */
+
+.text-primary{
+  color:#f6cd61;
+  font-weight: bold;
+  
+}
+
+.text-secondary{
+  color: #0284d0
+}
+
+.text-dark{
+  color: #333;
+}
+.text-light-dark{
+  color: #4a4e4d;
+}
+
+/* btn */
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  background-color: #FF6A80;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+/* when we hover just the opacity will change */
+.btn:hover{
+  opacity: 0.9;
+
+}
+
+.btn-primary, .bg-primary{
+  color: white;
+  background-color: #28a745;
+}
+
+.btn-secondary, .bg-secondary{
+  color: white;
+  background:#f6cd61;
+}
+
+.btn-dark, .bg-dark{
+  color: white;
+  background:#333;
+}
+
+.btn-light, .bg-light{
+  color: #333;
+  background:white;
+}
+
+.btn-outline{
+  /* we can make the background transparent */
+  background: transparent;
+  border: 1px solid white;
+}
+
+
+
+/* flex items class */
+.flex-items{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+
+
+/*  Scroll view edit */
+
+
+.scroll::-webkit-scrollbar {
+   width: 10px;
+}
+
+.scroll::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(25, 34, 165, 0.3); 
+   border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(87, 86, 90, 0.5); 
+}
