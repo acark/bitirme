@@ -62,6 +62,7 @@ async function runCode(){
 
     port.addListener(()=>{
 
+        
         //when any change in this port
         const turnOn = port.pinState(1) === PinState.High;
         const turnOn2 = port.pinState(2) === PinState.High;
