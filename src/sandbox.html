@@ -1,300 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- custom font-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
-  <!-- -------------------- -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
-  <!-- ---------------------------------- -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <!-- first we link to the css file ... -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utilities.css">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -------------------- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ---------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- first we link to the css file ... -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+
     <title>Sandbox</title>
-</head>
+  </head>
 
-
-<body id="sandbox">
-
+  <body id="sandbox">
     <header class="page-header">
-        <div class="navbar" id="navbar">
-          <h1 class = "logo"><span class="text-primary"><i class="fas fa-car-battery"></i> Dene</span>Yap</h1>
-    
-          <!-- then we have our nav items -->
-          <nav>
-            <ul>
-              <!-- in order to move inside a  page we pass thew id of the place where we want to go -->
-              <li><a href="index.html"><i class="fas fa-sign-out-alt fa-lg"></i> Çıkış</a></li>
-          
-            </ul>
-          </nav>
-    
-        </div>
+      <div class="navbar" id="navbar">
+        <h1 class="logo">
+          <span class="text-primary"
+            ><i class="fas fa-car-battery"></i> Dene</span
+          >Yap
+        </h1>
+
+        <!-- then we have our nav items -->
+        <nav>
+          <ul>
+            <!-- in order to move inside a  page we pass thew id of the place where we want to go -->
+            <li>
+              <a href="index.html"
+                ><i class="fas fa-sign-out-alt fa-lg"></i> Çıkış</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-
-    <div class="container">
-
-        <div class="components scroll">
-
-
-            <div class="row-item">
-                <div class="component-card">
-                <wokwi-led
-                id="led"
-                color="red"
-                class="component"
-                ></wokwi-led>
-
-                <div class="pin-info">
-                    <p><Span class="digital">Digital 1</Span></p>
-                </div>
-            </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-                    <wokwi-led
-                    id="led2"
-                    color="green"
-                    class="component"
-                    ></wokwi-led>
-
-                    <div class="pin-info">
-                        <p><Span class="digital">Digital 2</Span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-                    <wokwi-led
-                    color="blue"
-                    class="component"
-                    ></wokwi-led>
-
-                    <div class="pin-info">
-                        <p><Span class="digital">Digital 3</Span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-buzzer class= "component" ${boolean('hasSignal', false)}></wokwi-buzzer>
-
-                    <div class="pin-info">
-                        <p><Span class="digital">Digital 4</Span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-servo class ="component" angle=${number('angle', 45, { min: 0, max: 180 })}>
-                    </wokwi-servo>
-
-                    <div class="pin-info">
-                        <p><Span class="analog">Analog A0</Span></p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-potentiometer class ="component" min="0" max="200" ></wokwi-potentiometer>
-
-                    <div class="pin-info">
-                        <p><Span class="analog">Analog A1</Span></p>
-                    </div>
-
-                </div>
-            </div>
-
-
-<!-- ********************* -->
-
-            <div class="row-item">
-                <div class="component-card">
-                <wokwi-led
-                color="red"
-                class="component"
-                ></wokwi-led>
-
-                <div class="pin-info">
-                    <p><Span class="digital">Digital 1</Span></p>
-                </div>
-            </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-                    <wokwi-led
-                    color="green"
-                    class="component"
-                    ></wokwi-led>
-
-                    <div class="pin-info">
-                        <p><Span class="digital">Digital 2</Span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-                    <wokwi-led
-                    color="blue"
-                    class="component"
-                    ></wokwi-led>
-
-                    <div class="pin-info">
-                        <p><Span class="digital">Digital 3</Span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-buzzer class= "component" ${boolean('hasSignal', false)}></wokwi-buzzer>
-
-                    <div class="pin-info">
-                        <p><Span class="digital">Digital 4</Span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-servo class ="component" angle=${number('angle', 45, { min: 0, max: 180 })}>
-                    </wokwi-servo>
-
-                    <div class="pin-info">
-                        <p><Span class="analog">Analog A0</Span></p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-potentiometer class ="component" min="0" max="200" ></wokwi-potentiometer>
-
-                    <div class="pin-info">
-                        <p><Span class="analog">Analog A1</Span></p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-servo class ="component" angle=${number('angle', 45, { min: 0, max: 180 })}>
-                    </wokwi-servo>
-
-                    <div class="pin-info">
-                        <p><Span class="analog">Analog A0</Span></p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-potentiometer class ="component" min="0" max="200" ></wokwi-potentiometer>
-
-                    <div class="pin-info">
-                        <p><Span class="analog">Analog A1</Span></p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-servo class ="component" angle=${number('angle', 45, { min: 0, max: 180 })}>
-                    </wokwi-servo>
-
-                    <div class="pin-info">
-                        <p><Span class="analog">Analog A0</Span></p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row-item">
-                <div class="component-card">
-
-                    <wokwi-potentiometer class ="component" min="0" max="200" ></wokwi-potentiometer>
-
-                    <div class="pin-info">
-                        <p><Span class="analog">Analog A1</Span></p>
-                    </div>
-
-                </div>
-            </div>
-
-            
-
-            
+    <div class="element-selection-menu">
+      <div class="element-selection">
+        <div class="element">
+          <img src="./img/resistor.png" alt="" />
         </div>
-
-
-        <!-- TEXT EDITOR -->
-        <div class="text-editor">
-            
-            <div class="text-editor-control">
-                <div  id="runbtn" class="btn">Çalıştır <i class="fas fa-play"></i></div>
-                <div  id="stopbtn" class="btn btn-secondary">Durdur <i class="fas fa-stop"></i></div>
-            </div>
-
-            <div class="editor-area">
-                <div  id="editor"></div>
-            </div>
-            <div class="serial-monitor">
-
-            </div>
-
+        <div class="element led">
+          <img src="./img/ledBlueOff.png" alt="" />
         </div>
-
-
-        <!-- <div class="editor" id="editor" type="text/css" media="screen" >
-        </div> -->
-
+        <div class="element led">
+          <img src="./img/led.png" alt="" />
+        </div>
+        <div class="element led">
+          <img src="./img/ledYellowOff.png" alt="" />
+        </div>
+        <div class="element">
+          <img src="./img/g3496.png" alt="" />
+        </div>
+      </div>
     </div>
 
-    <script src="./ace-builds-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <div class="container">
+      <svg id="main" height="100%" width="100%"></svg>
+
+      <!-- TEXT EDITOR -->
+      <div class="text-editor">
+        <div class="text-editor-control">
+          <div id="runbtn" class="btn">
+            Çalıştır <i class="fas fa-play"></i>
+          </div>
+          <div id="stopbtn" class="btn btn-secondary">
+            Durdur <i class="fas fa-stop"></i>
+          </div>
+          <div class="loader"></div>
+        </div>
+
+        <div class="editor-area">
+          <div id="editor"></div>
+        </div>
+        <div class="serial-monitor"></div>
+      </div>
+
+      <!-- <div class="editor" id="editor" type="text/css" media="screen" >
+        </div> -->
+    </div>
+
+    <script
+      src="./ace-builds-master/src-noconflict/ace.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
     <script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/light");
-    editor.session.setMode("ace/mode/csharp");
-    editor.session.setUseSoftTabs(false);
-    
-    editor.resize();
-    editor.renderer.updateFull();
+      var editor = ace.edit("editor");
+      editor.setTheme("ace/theme/light");
+      editor.session.setMode("ace/mode/csharp");
+      editor.session.setUseSoftTabs(false);
+
+      editor.resize();
+      editor.renderer.updateFull();
     </script>
 
+    <script src="analyse.js"></script>
+    <script src="schematic.js"></script>
 
-    <script  src="../node_modules/@wokwi/elements/dist/wokwi-elements.bundle.js"></script>
-    <script  src="../build/app.bundle.js"></script>
-
-</body>
+    <script src="../build/app.bundle.js"></script>
+  </body>
 </html>

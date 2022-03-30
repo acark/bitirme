@@ -20,10 +20,7 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "@wokwi/elements": "^0.32.0",
-    "ace-code-editor": "^1.2.3",
     "avr8js": "^0.8.5",
-    "buffer": "^6.0.3",
     "intel-hex": "^0.1.2"
   }
 }
